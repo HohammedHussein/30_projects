@@ -12,8 +12,9 @@ btn.addEventListener("mouseover", (e) => {
 
 const catchBtn = document.querySelector(".catchMe");
 
-catchBtn.addEventListener("mouseenter", () => {
-  const random = Math.floor(Math.random() * (0, 400 + 1));
+catchBtn.addEventListener("mouseover", () => {
+  const random = Math.floor(Math.random() * (0, 600 + 2));
+  const random2 = Math.floor(Math.random() * (0, 400 + 2));
   catchBtn.style.top = random + "px";
-  catchBtn.style.left = random + "px";
+  catchBtn.style.left = random2 + "px";
 });

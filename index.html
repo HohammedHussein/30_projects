@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30 Projects HTML | CSS | JS</title>
+    <style>
+      body {
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+        font-size: 20px;
+      }
+      div {
+        width: 600px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+      }
+      ol {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 10px;
+      }
+      @media (min-width: 375px) and (max-width: 1024px) {
+        div {
+          width: 100%;
+          padding: 0;
+        }
+        ol {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      ol li a {
+        padding: 0 4px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Choose The Project</h1>
+      <ol>
+        <li><a href="1_heart_animation/index.html">heart animation</a></li>
+        <li><a href="2_text_animtion/index.html">text animation</a></li>
+        <li><a href="3_mini_calendar/index.html">mini calendar</a></li>
+        <li><a href="4_buttom_effect/index.html">button Effect</a></li>
+        <li><a href="5_Random_images/index.html">Random images</a></li>
+        <li><a href="6_Dark_mode/index.html">Dark_modes</a></li>
+        <li>
+          <a href="7_testimonial_slider/index.html">testimonial_slider</a>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
