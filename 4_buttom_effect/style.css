@@ -1,0 +1,61 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: #232323;
+  font-family: sans-serif;
+  position: relative;
+}
+.catchMe {
+  border: 1px solid #ccc;
+  padding: 15px 22px;
+  width: 160px;
+  border-radius: 10px;
+  background-color: #eae7e7;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3);
+  position: absolute;
+  top: 30%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: top 0.3s, left 0.3s, right 0.3s, bottom 0.3s;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ccc;
+  padding: 15px 22px;
+  border-radius: 10px;
+  background-color: #eae7e7;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: var(--xPos);
+  top: var(--yPos);
+  transform: translate(-50%, -50%);
+  background-color: orangered;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  transition: width 0.8s, height 0.8s;
+}
+.btn span {
+  position: relative;
+  z-index: 5;
+}
+.btn:hover {
+  color: white;
+}
+.btn:hover::before {
+  width: 600px;
+  height: 600px;
+}
