@@ -27,4 +27,4 @@ Contributions are welcome! If you have ideas for new projects or improvements, f
 
 ## License
 
-This repository is open source and available under the MIT License.
+This repository is open source.
