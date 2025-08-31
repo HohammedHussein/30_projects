@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100v;
+  text-align: center;
+
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+h1 {
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  backdrop-filter: brightness(0.5);
+  letter-spacing: 4px;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 8px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  font-family: Impact;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+.split {
+  width: 50%;
+  height: 100%;
+}
+.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: brown;
+  background-image: url("https://btech.com/media/catalog/product/cache/22b1bed05f04d71c4a848d770186c3c4/a/3/a3dff4b3e6ebabd3623e22345afd72605c6ac5644e3b26557edf9958b1228bfb.webp");
+  background-size: cover;
+  border-right: 3px solid #000;
+  z-index: 150;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: aquamarine;
+  background-image: url("https://images.samsung.com/is/image/samsung/p6pim/ae_ar/2401/gallery/ae-ar-galaxy-s24-s928-490242-sm-s928blgqmea-539387341?$Q90_684_547_JPG$");
+  background-size: cover;
+}
+
+.active-right .right {
+  width: 75%;
+}
+.active-right .left {
+  width: 25%;
+}
+
+.active-left .left {
+  width: 75%;
+}
+.active-left .right {
+  width: 25%;
+}
+
+.left,
+.right {
+  transition: width 1.2s ease-in-out;
+}
