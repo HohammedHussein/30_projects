@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: cursive;
+  background-color: salmon;
+}
+
+.container {
+  background-color: lightpink;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 5px 20px;
+  min-width: 650px;
+}
+
+textarea {
+  height: 150px;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid #aaa;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  resize: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  color: gray;
+  font-weight: bold;
+}
+.total {
+  color: slateblue;
+}
+
+.remaining {
+  color: orangered;
+}
